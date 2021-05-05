@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="tab_text_1">Gallery</string>
+    <string name="tab_text_2">Featured</string>
+    <string name="tab_text_3">About Us</string>
+    <string name="let_us_guide_you_home">Let Us Guide You Home!</string>
+    <string name="a_town_where_the_air_feels_like_home">A town where the air feels like home.</string>
+    <string name="broker">broker</string>
+    <string name="customer">Customer</string>
+    <string name="manipal_rentals">MANIPAL RENTALS</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">LOGIN</string>
+    <string name="new_user_sign_up">NEW USER? SIGN UP</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="akansha_vijay">Akansha Vijay</string>
+    <string name="shivam_mahajan">Shivam Mahajan</string>
+    <string name="it_undergrad_with_cgpa_of_9_22_and_internship_in_dboi_highly_talented_and_skilled_at_webdev">IT undergrad with cgpa of 9.22 and internship in DBOI.Highly talented and skilled at webdev.</string>
+    <string name="todo">TODO</string>
+    <string name="the_team">The Team</string>
+    <string name="it_specialist_with_7_years_of_professional_experience_in_information_security_and_digital_forensics_expert_with_a_wide_variety_of_security_engineering_networking_and_operating_system_software_possesses_an_associate_degree_in_information_security_and_digital_forensics">IT specialist with 7+ years of professional experience in information security and digital forensics. Expert with a wide variety of security, engineering, networking, and operating system software. Possesses an Associate Degree in Information Security and Digital Forensics.</string>
+    <string name="our_team">Our Team</string>
+</resources>
