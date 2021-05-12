@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#FFFFFF">
+
+
+    <EditText
+        android:id="@+id/flat_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:hint="Enter Property Name"
+        android:singleLine="false"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#A39B9E" />
+
+    <EditText
+        android:id="@+id/flat_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flat_name"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Enter Description"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:id="@+id/flat_bhk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flat_description"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter BHK"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/flat_rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/flat_bhk"
+        android:hint="Enter Rent"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_brokerage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_rent"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter Brokerage"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_secdep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_brokerage"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter Security Deposit"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_secdep"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Enter Start Date"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_brokerid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_startdate"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Broker ID"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_brokername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_brokerid"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Enter Broker Name"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_brokerno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_brokername"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Broker PhNo"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_availability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_brokerno"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Availability"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_availability"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Feature"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_feature"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Enter Image URL1"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_image2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_image1"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Enter Image URL2"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/flat_sqft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_image2"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginLeft="@dimen/cardview_default_elevation"
+        android:layout_marginTop="@dimen/cardview_default_elevation"
+        android:layout_marginEnd="@dimen/cardview_default_elevation"
+        android:layout_marginRight="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/cardview_default_elevation"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter SqFt"
+        android:textColorHint="#A39B9E"
+        android:textColor="@color/black"/>
+
+       <Button
+           android:id="@+id/addflat"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/flat_sqft"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="8dp"
+           android:layout_marginRight="50dp"
+           android:background="#BC475E"
+           android:text="ADD" />
+
+       <Button
+           android:id="@+id/cancelflat"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/flat_sqft"
+           android:layout_marginLeft="50dp"
+           android:layout_marginTop="8dp"
+           android:background="#BC475E"
+           android:text="CANCEL" />
+
+
+   </RelativeLayout>
+</ScrollView>
