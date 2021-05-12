@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF">
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:background="@color/white">
+        android:layout_margin="@dimen/activity_horizontal_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,28 +24,28 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:scaleType="matrix"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="matrix" />
 
                 <RelativeLayout
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
-                    android:layout_margin="15dp"
-                    android:layout_alignParentBottom="true"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                       <ImageView
-                           android:layout_marginRight="3dp"
-                           android:layout_marginTop="3dp"
-                           android:id="@+id/imageViewLike"
-                           android:layout_alignParentRight="true"
-                           android:background="@drawable/ic_like"
-                           android:layout_width="30dp"
-                           android:layout_height="30dp"/>
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="3dp"/>
 
-                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textViewfeature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/orange"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
 
             </RelativeLayout>
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/textViewHead"
+                    android:id="@+id/textViewName"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
@@ -63,8 +63,9 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="#4F5254"
                     android:textStyle="bold" />
+
                 <TextView
-                    android:id="@+id/textViewPrice"
+                    android:id="@+id/textViewRent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -73,13 +74,46 @@
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/textViewAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName"
+                    android:layout_alignParentRight="true"
+                    android:background="#12D375"
+                    android:text="AVAILABLE"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewBHK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName"
+                    android:fontFamily="sans-serif"
+                    android:text="BHK"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
                     android:id="@+id/textViewDesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textViewHead"
+                    android:layout_below="@id/textViewBHK"
                     android:fontFamily="sans-serif-light"
-                    android:text="Description"
+                    android:text="description"
                     android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDesc"
+                    android:layout_alignParentRight="true"
+                    android:background="#8F8FB5"
+                    android:hapticFeedbackEnabled="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/ic_menu_delete" />
 
 
             </RelativeLayout>

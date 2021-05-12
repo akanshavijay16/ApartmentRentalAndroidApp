@@ -8,6 +8,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -30,6 +32,19 @@ public class MainActivity4 extends AppCompatActivity implements MyAdapter.OnItem
     public static final String EXTRA_NAME = "name";
     public static final String EXTRA_DESC = "description";
     public static final String EXTRA_IMAGE = "productImage";
+    public static final String EXTRA_BHK = "bhk";
+    public static final String EXTRA_SF = "sqft";
+    public static final String EXTRA_BROKERAGE = "brokerage";
+    public static final String EXTRA_AVAILABILITY = "availability";
+    public static final String EXTRA_RENT = "rent";
+    public static final String EXTRA_SDATE = "startdate";
+    public static final String EXTRA_SECURITYD = "securitydep";
+    public static final String EXTRA_BROKERNO = "brokerPhNo";
+    public static final String EXTRA_IMAGE2 = "productImage2";
+    public static final String EXTRA_BROKERNAME = "broker_name";
+    public static final String EXTRA_FEATURE = "feature";
+    public static final String EXTRA_ID = "_id";
+
 
 
 
@@ -44,6 +59,8 @@ public class MainActivity4 extends AppCompatActivity implements MyAdapter.OnItem
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
+
 
 
         recyclerView=(RecyclerView)findViewById(R.id.recyclerView);
@@ -76,7 +93,21 @@ public class MainActivity4 extends AppCompatActivity implements MyAdapter.OnItem
                             ListItem item=new ListItem(
                                     o.getString("name"),
                                     o.getString("description"),
-                                    o.getString("productImage")
+                                    o.getString("productImage"),
+                                    o.getString("_id"),
+                                    o.getString("productImage2"),
+                                    o.getString("broker_id"),
+                                    o.getString("brokerPhNo"),
+                                    o.getString("rent"),
+                                    o.getString("availability"),
+                                    o.getString("bhk"),
+                                    o.getString("startdate"),
+                                    o.getString("brokerage"),
+                                    o.getString("securitydep"),
+                                    o.getString("sqft"),
+                                    o.getString("feature"),
+                                    o.getString("broker_name")
+
                             );
                             listItems.add(item);
                         }
@@ -104,10 +135,25 @@ public class MainActivity4 extends AppCompatActivity implements MyAdapter.OnItem
       Intent detailIntent = new Intent(MainActivity4.this,DetailActivity.class);
       ListItem clickedItem = listItems.get(position);
 
-      detailIntent.putExtra(EXTRA_NAME,clickedItem.getHead());
-      detailIntent.putExtra(EXTRA_DESC,clickedItem.getDesc());
+      detailIntent.putExtra(EXTRA_NAME,clickedItem.getName());
+      detailIntent.putExtra(EXTRA_DESC,clickedItem.getDescription());
+      detailIntent.putExtra(EXTRA_BHK,clickedItem.getBhk());
+      detailIntent.putExtra(EXTRA_SF,clickedItem.getSqft());
+      detailIntent.putExtra(EXTRA_BROKERAGE,clickedItem.getBrokerage());
+      detailIntent.putExtra(EXTRA_BROKERNO,clickedItem.getBroker_no());
+      detailIntent.putExtra(EXTRA_AVAILABILITY,clickedItem.getAvailable());
+      detailIntent.putExtra(EXTRA_RENT,clickedItem.getRent());
+      detailIntent.putExtra(EXTRA_SECURITYD,clickedItem.getSecurityd());
+      detailIntent.putExtra(EXTRA_SDATE,clickedItem.getSdate());
+      detailIntent.putExtra(EXTRA_BROKERNAME,clickedItem.getBrokername());
+      detailIntent.putExtra(EXTRA_FEATURE,clickedItem.getFeature());
+      detailIntent.putExtra(EXTRA_IMAGE,clickedItem.getImageUrl());
+      detailIntent.putExtra(EXTRA_IMAGE2,clickedItem.getImageUrl2());
 
-      startActivity(detailIntent);
+
+
+
+        startActivity(detailIntent);
 
     }
 }

@@ -17,12 +17,12 @@
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="150dp"
+            android:layout_width="268dp"
             android:layout_height="128dp"
             android:layout_gravity="center"
-            android:fontFamily="cursive"
+            android:fontFamily="serif"
             android:gravity="center"
-            android:text="@string/our_team"
+            android:text="The Team"
             android:textColor="@color/black"
             android:textSize="36sp"
             android:textStyle="bold" />

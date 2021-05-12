@@ -9,6 +9,7 @@
     app:statusBarBackground="#F4EDED"
     tools:context=".MainActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,6 +37,8 @@
             app:tabRippleColor="#FFFFFF"
             app:tabTextColor="#FFFFFF"
             app:tabUnboundedRipple="false" />
+
+
     </androidx.viewpager.widget.ViewPager>
 
 

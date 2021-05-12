@@ -1,68 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".MainActivity">
-
-
-    <ImageView
-        android:id="@+id/imageView2"
+    android:background="@color/white">
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/home3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView_head"
-        android:layout_width="319dp"
-        android:layout_height="91dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        <ImageView
+            android:id="@+id/imageViewURL"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+        <ImageView
+            android:id="@+id/imageViewURL2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/textView_rent"
-        android:layout_width="326dp"
-        android:layout_height="79dp"
-        android:text="RENT:"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936"
-        android:src="@drawable/baseline_info_20" />
+    <ScrollView
+        android:fillViewport="true"
+        android:scrollbars = "vertical"
+        android:scrollbarStyle="insideInset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:gravity="fill_horizontal"
+                android:text="description"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/agent"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_sqft"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#4A148C"
+                android:text="CONTACT AGENT" />
+
+
+            <TextView
+                android:id="@+id/textView_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_desc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="RENT"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_brokerage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_rent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="brokerage"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_brokerage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="security"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_sdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_security"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="sdate"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_bhk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_sdate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="bhk"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_sqft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_bhk"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="sqft"
+                android:textColor="#4A148C"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

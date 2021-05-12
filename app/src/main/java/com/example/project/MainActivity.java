@@ -19,6 +19,8 @@ import com.example.project.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +32,24 @@ public class MainActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
 
 
-
-
+    }
+    public void openActivity(View v)
+    {
+        Intent intent_gallery = new Intent(MainActivity.this, MainActivity4.class);
+        startActivity(intent_gallery);
 
     }
-    public void openActivity(View v) {
-        Intent intent = new Intent(MainActivity.this, MainActivity4.class);
-        startActivity(intent);
+    public void openActivity2(View v)
+    {
+        Intent intent_feature = new Intent(MainActivity.this, ActivityFeatured.class);
+        startActivity(intent_feature);
     }
 
+    public void cust_logout(View v)
+    {
+        Intent clogout = new Intent(MainActivity.this, MainActivity_First.class);
 
+        clogout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(clogout);
+    }
 }

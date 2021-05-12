@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".BrokerActivity"></activity>
+        <activity android:name=".BrokerLogin" />
         <activity android:name=".MainActivity_First">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity4" />
-        <activity android:name=".DetailActivity"/>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".ActivityFeatured" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity" />

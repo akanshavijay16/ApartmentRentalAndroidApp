@@ -14,13 +14,24 @@ public class MainActivity_First extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main__first);
         Button customer=(Button)findViewById(R.id.button3);
+        Button broker=(Button)findViewById(R.id.button2);
         customer.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v)
             {
-                Intent intent = new Intent(MainActivity_First.this, MainActivity2.class);
-                startActivity(intent);
+                Intent intentcust = new Intent(MainActivity_First.this, MainActivity2.class);
+                startActivity(intentcust);
+
             }
         });
+        broker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentbroker = new Intent(MainActivity_First.this,BrokerLogin.class);
+                startActivity(intentbroker);
+
+            }
+        });
+
     }
 }
