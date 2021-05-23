@@ -78,7 +78,7 @@ public class BrokerLogin extends AppCompatActivity {
                         }
                         else if(response.message().equalsIgnoreCase("Unauthorized"))
                         {
-                            Toast.makeText(BrokerLogin.this,"Wrong Credentials",Toast.LENGTH_LONG).show();
+                            Toast.makeText(BrokerLogin.this,"Invalid Credentials",Toast.LENGTH_LONG).show();
                         }
 
                     }
