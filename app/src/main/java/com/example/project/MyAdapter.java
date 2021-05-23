@@ -70,7 +70,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             holder.textViewName.setText(listItem.getName());
             holder.textViewBHK.setText(listItem.getBhk() + " BHK");
             holder.textViewAvailable.setText(listItem.getAvailable());
-            holder.textViewRent.setText("₹" + listItem.getRent());
+            holder.textViewRent.setText("₹" + listItem.getRent()+"pm");
             holder.textViewDesc.setText(listItem.getDescription());
 
             if (listItem.getAvailable().equalsIgnoreCase("true"))
@@ -151,7 +151,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
                     AlertDialog alertDialog = alertDialogBuilder.create();
 
                     alertDialog.show();
-                    alertDialog.getWindow().setBackgroundDrawableResource(R.color.darkpurple);
+                    alertDialog.getWindow().setBackgroundDrawableResource(R.color.blue);
                 }
 
 

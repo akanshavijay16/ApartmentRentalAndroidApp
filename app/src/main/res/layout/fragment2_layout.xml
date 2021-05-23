@@ -10,31 +10,33 @@
 
     <Button
         android:id="@+id/buttonvisitfeature"
-        android:layout_width="161dp"
-        android:layout_height="72dp"
-        android:background="#5E4D7E"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="#3C3C6A"
         android:onClick="openActivity2"
         android:text="VISIT FEATURED"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="284dp"
-        android:layout_height="89dp"
+        android:layout_width="365dp"
+        android:layout_height="70dp"
+        android:fontFamily="serif"
+        android:gravity="center"
         android:text="Beautiful spaces in the best places."
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="22sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.526" />
 </androidx.constraintlayout.widget.ConstraintLayout>

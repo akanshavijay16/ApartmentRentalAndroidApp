@@ -25,8 +25,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_centerHorizontal="true"
-                    android:scaleType="matrix" />
+                    android:scaleType="fitXY" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -43,9 +42,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:background="@color/orange"
+                    android:background="#DF3F65"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textViewRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFD740"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
 
 
             </RelativeLayout>
@@ -64,24 +72,17 @@
                     android:textColor="#4F5254"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textViewRent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="$2000"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="@color/black" />
+
 
                 <TextView
                     android:id="@+id/textViewAvailable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textViewName"
                     android:layout_alignParentRight="true"
-                    android:background="#12D375"
-                    android:text="AVAILABLE"
-                    android:textColor="@color/white" />
+                    android:layout_marginTop="10dp"
+                    android:background="#21A867"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/textViewBHK"
@@ -98,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textViewBHK"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="serif"
                     android:text="description"
                     android:textColor="@color/black" />
 
@@ -108,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textViewDesc"
                     android:layout_alignParentRight="true"
-                    android:background="#8F8FB5"
+                    android:background="#61605F"
                     android:hapticFeedbackEnabled="false"
                     android:outlineAmbientShadowColor="@color/white"
                     android:outlineSpotShadowColor="@color/white"

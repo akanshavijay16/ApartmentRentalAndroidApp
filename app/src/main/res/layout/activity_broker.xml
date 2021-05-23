@@ -10,37 +10,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/brokerproperty"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:background="@color/white"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text="My Properties"
-        android:textColor="@color/black"
-        android:textSize="36sp"></TextView>
+        <TextView
+            android:id="@+id/brokerproperty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3C3C6A"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="My Properties"
+            android:textColor="@color/white"
+            android:textSize="30sp"></TextView>
 
         <Button
             android:id="@+id/addproperty"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_below="@id/brokerproperty"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:background="#BC475E"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#358E36"
             android:text="ADD PROPERTY"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/broker_logout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_below="@id/brokerproperty"
             android:layout_alignParentRight="true"
             android:layout_gravity="center"
-            android:layout_marginRight="60dp"
-            android:background="#BC475E"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="#D52236"
             android:text="Logout" />
     </RelativeLayout>
 

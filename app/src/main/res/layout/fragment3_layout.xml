@@ -49,14 +49,14 @@
         <TextView
             android:id="@+id/textView6"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="240dp"
             android:width="100dp"
-            android:fontFamily="casual"
+            android:fontFamily="serif"
             android:gravity="center_horizontal"
             android:maxLength="100000"
-            android:text="@string/it_specialist_with_7_years_of_professional_experience_in_information_security_and_digital_forensics_expert_with_a_wide_variety_of_security_engineering_networking_and_operating_system_software_possesses_an_associate_degree_in_information_security_and_digital_forensics"
+            android:text="A coding and technology enthusiast who is passionate about music. Always keen to learn new things. Dedicated and determined towards work. You might find her with her guitar in some corner of the room."
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="italic" />
 
 
@@ -81,14 +81,14 @@
         <TextView
             android:id="@+id/textView8"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="240dp"
             android:width="100dp"
-            android:fontFamily="casual"
+            android:fontFamily="serif"
             android:gravity="center_horizontal"
             android:maxLength="100000"
-            android:text="Driven software engineer with 6+ years of experience executing cutting-edge engineering solutions with a wide range of e-commerce application and technology skills. Able to leverage full-stack expertise to build interactive and user-centered website designs to scale. "
+            android:text="Upcoming B.Tech. graduate with strong interest in problem solving and analytics. Driven by new challenges. Enthusiastic to learn new technologies and methodologies along with a can-do attitude."
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="italic" />
 
 
@@ -113,14 +113,14 @@
         <TextView
             android:id="@+id/textView10"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="240dp"
             android:width="100dp"
-            android:fontFamily="casual"
+            android:fontFamily="serif"
             android:gravity="center_horizontal"
             android:maxLength="100000"
-            android:text="Project manager with 8+ years of experience managing multi-million dollar construction projects, coordinating a team of 90+ subcontractors, and performing budget allocation and analysis. Managed a project budget of $325M+ while reducing costs by 15% annually."
+            android:text="An ambivert and organised individual with interest in problem solving aspect of technology. Sincere and result oriented on the work front. Enjoys a team-driven environment and receptive to new ideas."
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="italic" />
 
     </LinearLayout>

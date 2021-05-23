@@ -29,7 +29,7 @@
         android:scrollbars = "vertical"
         android:scrollbarStyle="insideInset"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
@@ -47,12 +47,13 @@
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
+                android:background="@color/white"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -64,94 +65,101 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="serif"
-                android:gravity="fill_horizontal"
+                android:gravity="center_horizontal"
                 android:text="description"
-                android:textColor="@color/black"
+                android:textColor="#424141"
                 android:textSize="18sp" />
+
 
             <Button
                 android:id="@+id/agent"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/textView_sqft"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-                android:background="#4A148C"
-                android:text="CONTACT AGENT" />
-
+                android:background="#3C3C6A"
+                android:text="CONTACT AGENT"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_rent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_desc"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="RENT"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_brokerage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_rent"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="brokerage"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_security"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_brokerage"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="security"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_sdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_security"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="sdate"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_bhk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_sdate"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="bhk"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_sqft"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView_bhk"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="sqft"
-                android:textColor="#4A148C"
-                android:textSize="20sp" />
+                android:textColor="#424141"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>

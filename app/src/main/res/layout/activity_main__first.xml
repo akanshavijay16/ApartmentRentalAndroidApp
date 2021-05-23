@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity_First"
-    android:background="@drawable/screen">
+    android:background="@drawable/image5">
 
     <TextView
         android:id="@+id/textView"
@@ -40,12 +40,13 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="116dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="#BC475E"
+        android:background="@drawable/front_buttons"
         android:text="@string/broker"
+        android:textColor="@color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -55,12 +56,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="116dp"
-        android:layout_height="52dp"
-        android:background="#FC826DAA"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/front_buttons"
         android:text="@string/customer"
+        android:textColor="@color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -70,18 +72,30 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="272dp"
-        android:layout_height="157dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:fontFamily="sans-serif-thin"
-        android:text="@string/manipal_rentals"
+        android:text="Manipal Rentals"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.223" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        app:srcCompat="@drawable/symbol4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -80,12 +80,12 @@ public class DetailActivity extends AppCompatActivity {
 
 
         Name.setText(i.getStringExtra(EXTRA_NAME));
-        Rent.setText("\u25AA RENT : ₹"+rent);
-        BHK.setText("\u25AA BHK : "+bhk);
-        Security.setText("\u25AA SECURITY DEPOSIT : ₹"+secd);
-        Brokerage.setText("\u25AA BROKERAGE : ₹"+broke);
-        SqFt.setText("\u25AA SQ.FT : "+sf);
-        Sdate.setText("\u25AA START DATE : "+sd);
+        Rent.setText("\u2022 RENT : ₹"+rent+" pm");
+        BHK.setText("\u2022 BHK : "+bhk);
+        Security.setText("\u2022 SECURITY DEPOSIT : ₹"+secd);
+        Brokerage.setText("\u2022 BROKERAGE : ₹"+broke);
+        SqFt.setText("\u2022 SQ.FT : "+sf);
+        Sdate.setText("\u2022 START DATE : "+sd);
         Description.setText(i.getStringExtra(EXTRA_DESC));
 
         Picasso.with(DetailActivity.this)
@@ -126,7 +126,7 @@ public class DetailActivity extends AppCompatActivity {
                 AlertDialog alertDialog = alertDialogBuilder.create();
 
                 alertDialog.show();
-                alertDialog.getWindow().setBackgroundDrawableResource(R.color.orange);
+                alertDialog.getWindow().setBackgroundDrawableResource(R.color.blue);
             }
         });
 

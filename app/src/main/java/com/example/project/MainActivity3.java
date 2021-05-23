@@ -59,7 +59,6 @@ public class MainActivity3 extends AppCompatActivity {
                             Toast.makeText(MainActivity3.this, "Registered Successfully", Toast.LENGTH_LONG).show();
                             Intent intentout = new Intent(MainActivity3.this, MainActivity2.class);
                             startActivity(intentout);
-                            finish();
                         } else if (response.message().equalsIgnoreCase("Conflict")) {
                             Toast.makeText(MainActivity3.this, "Email Exists", Toast.LENGTH_LONG).show();
                         }

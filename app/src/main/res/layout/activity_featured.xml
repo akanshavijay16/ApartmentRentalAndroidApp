@@ -9,13 +9,13 @@
     <TextView
         android:id="@+id/fproperty"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/white"
+        android:layout_height="50dp"
+        android:background="#3C3C6A"
         android:fontFamily="serif"
         android:gravity="center"
         android:text="Featured Properties"
-        android:textColor="@color/black"
-        android:textSize="36sp"></TextView>
+        android:textColor="@color/white"
+        android:textSize="30sp"></TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"

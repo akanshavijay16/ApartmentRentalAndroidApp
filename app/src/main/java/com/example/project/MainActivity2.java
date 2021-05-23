@@ -68,11 +68,10 @@ public class MainActivity2 extends AppCompatActivity {
                            Toast.makeText(MainActivity2.this,"Login Successful", Toast.LENGTH_LONG).show();
                             Intent intentin = new Intent(MainActivity2.this, MainActivity.class);
                             startActivity(intentin);
-                            finish();
                         }
                         else if(response.message().equalsIgnoreCase("Unauthorized"))
                         {
-                            Toast.makeText(MainActivity2.this,"Wrong Credentials",Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity2.this,"Invalid Credentials",Toast.LENGTH_LONG).show();
                         }
 
                     }
