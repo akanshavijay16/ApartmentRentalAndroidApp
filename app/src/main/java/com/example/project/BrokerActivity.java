@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -294,7 +295,7 @@ public class BrokerActivity extends AppCompatActivity implements MyAdapter.OnIte
     public void onItemClick(int position) {
         Intent brokerIntent = new Intent(BrokerActivity.this, DetailActivity.class);
         ListItem clickedItem = listItems3.get(position);
-
+        brokerIntent.putExtra("classFrom", BrokerActivity.class.toString());
         brokerIntent.putExtra(EXTRA_NAME, clickedItem.getName());
         brokerIntent.putExtra(EXTRA_DESC, clickedItem.getDescription());
         brokerIntent.putExtra(EXTRA_BHK, clickedItem.getBhk());

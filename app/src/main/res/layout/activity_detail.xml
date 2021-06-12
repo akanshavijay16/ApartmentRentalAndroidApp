@@ -81,6 +81,8 @@
                 android:layout_marginRight="10dp"
                 android:background="#3C3C6A"
                 android:text="CONTACT AGENT"
+                android:clickable="true"
+                android:focusable="true"
                 android:textSize="18sp" />
 
             <TextView

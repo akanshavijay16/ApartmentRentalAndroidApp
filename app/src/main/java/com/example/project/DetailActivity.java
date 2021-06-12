@@ -1,10 +1,12 @@
 package com.example.project;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -37,6 +39,7 @@ import static com.example.project.MainActivity4.EXTRA_BROKERNO;
 
 public class DetailActivity extends AppCompatActivity {
     final Context context = this;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -103,6 +106,10 @@ public class DetailActivity extends AppCompatActivity {
                 .into(Image2);
 
         Button agent = (Button)findViewById(R.id.agent);
+        if (i.getStringExtra("classFrom").equals(BrokerActivity.class.toString())) {
+            agent.setText("CONTACT : "+i.getStringExtra(EXTRA_BROKERNO));
+            agent.setEnabled(false);
+        }
 
         agent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,10 +122,14 @@ public class DetailActivity extends AppCompatActivity {
                 alertDialogBuilder
                         .setMessage("Name : "+i.getStringExtra(EXTRA_BROKERNAME)+"\n"+"Contact : "+i.getStringExtra(EXTRA_BROKERNO))
                         .setCancelable(false)
-                        .setPositiveButton("OK", new
+                        .setPositiveButton("CALL", new
                                 DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
                                         dialog.cancel();
+                                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                                        callIntent.setData(Uri.parse("tel:"+i.getStringExtra(EXTRA_BROKERNO)));
+                                        startActivity(callIntent);
+
                                     }
                                 });
 

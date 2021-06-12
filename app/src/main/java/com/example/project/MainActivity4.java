@@ -134,7 +134,7 @@ public class MainActivity4 extends AppCompatActivity implements MyAdapter.OnItem
     public void onItemClick(int position) {
       Intent detailIntent = new Intent(MainActivity4.this,DetailActivity.class);
       ListItem clickedItem = listItems.get(position);
-
+      detailIntent.putExtra("classFrom", MainActivity4.class.toString());
       detailIntent.putExtra(EXTRA_NAME,clickedItem.getName());
       detailIntent.putExtra(EXTRA_DESC,clickedItem.getDescription());
       detailIntent.putExtra(EXTRA_BHK,clickedItem.getBhk());

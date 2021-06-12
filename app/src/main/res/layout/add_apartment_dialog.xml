@@ -127,7 +127,7 @@
             android:layout_marginRight="@dimen/cardview_default_elevation"
             android:layout_marginBottom="@dimen/cardview_default_elevation"
             android:ems="10"
-            android:hint="Enter Start Date"
+            android:hint="Enter Start Date(YYYY/MM/DD)"
             android:inputType="date"
             android:textColor="@color/black"
             android:textColorHint="#A39B9E" />
@@ -195,7 +195,7 @@
             android:layout_marginRight="@dimen/cardview_default_elevation"
             android:layout_marginBottom="@dimen/cardview_default_elevation"
             android:ems="10"
-            android:hint="Enter Availability"
+            android:hint="Enter Availability(true/false)"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="#A39B9E" />
@@ -212,16 +212,18 @@
             android:layout_marginRight="@dimen/cardview_default_elevation"
             android:layout_marginBottom="@dimen/cardview_default_elevation"
             android:ems="10"
-            android:hint="Enter Feature"
+            android:hint="Enter Feature(true/false)"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="#A39B9E" />
+
+
 
         <EditText
             android:id="@+id/flat_image1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/flat_feature"
+            android:layout_below="@id/flat_brokerno"
             android:layout_marginStart="@dimen/cardview_default_elevation"
             android:layout_marginLeft="@dimen/cardview_default_elevation"
             android:layout_marginTop="@dimen/cardview_default_elevation"
@@ -277,6 +279,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="50dp"
             android:background="#358E36"
+            android:clickable="true"
+            android:focusable="true"
             android:text="ADD" />
 
         <Button
@@ -287,6 +291,8 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="8dp"
             android:background="#3C3C6A"
+            android:clickable="true"
+            android:focusable="true"
             android:text="CANCEL"
             android:textColor="@color/white" />
 

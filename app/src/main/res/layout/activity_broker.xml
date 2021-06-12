@@ -32,6 +32,8 @@
             android:layout_marginTop="10dp"
             android:background="#358E36"
             android:text="ADD PROPERTY"
+            android:clickable="true"
+            android:focusable="true"
             android:textColor="@color/white" />
 
         <Button
@@ -45,6 +47,8 @@
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
             android:background="#D52236"
+            android:clickable="true"
+            android:focusable="true"
             android:text="Logout" />
     </RelativeLayout>
 
